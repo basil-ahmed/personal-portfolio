@@ -1,0 +1,26 @@
+/* general styles for the page */
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+}
+.content{
+  padding: 80px 0px 0px;
+}
+button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, textarea, textarea:active, textarea:focus{
+  outline: none !important;
+}
+
+.row{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin-left: 30px;
+  margin-right: 30px;
+}

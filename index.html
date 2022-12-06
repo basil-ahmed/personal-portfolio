@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basil's Portfolio</title>
+  <meta dir="ltr" lang="en-US">
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+  <link rel="icon" type="image/png" href="images/favicon.png"><!--favicon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--icons-->
+  <link rel="stylesheet" href="indexStyles.css"><!--index page styles-->
+  <link rel="stylesheet" href="navBarStyles.css"><!--navigation styles-->
+  <link rel="stylesheet" href="welcomeStyles.css"><!--landing section styles-->
+  <link rel="stylesheet" href="preloader.css"><!--preloader styles-->
+  <link rel="stylesheet" href="portfolioStyles.css"><!--portfolio/projectd styles-->
+  <link rel="stylesheet" href="experiencesStyles.css"><!--work experiences styles-->
+  <link rel="stylesheet" href="testimonialsStyles.css"><!--testimonials styles-->
+  <link rel="stylesheet" href="contactForm.css"><!--contact form styles-->
+  <link rel="stylesheet" href="footerStyles.css"><!--footer styles-->
+  <link rel="stylesheet" href="skillsStyles.css"> <!--skills section styles-->
+  <link rel="stylesheet" href="aboutStyles.css"> <!--about section styles-->
+
+  <!--fonts: -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!--jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+  <script src="scripts/preloader.js" charset="utf-8"></script>
+  <div class="container">
+    <!--start of pre-loader-->
+    <div class="loader-container">
+        <div class="loader">Collecting my thoughts</div>
+    </div>
+    <!--end of pre-loader-->
+    <!-- Top Navigation Menu -->
+    <div class="topnav navBarShadow" id="myTopnav">
+      <a href="#home" class="active" style="width: 0px;"><img id="logo" src="images/logo.png" alt="Basil"></a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myNav" class="overlay">
+         <!-- Button to close the overlay navigation -->
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-close"></i></a>
+           <!-- Overlay content -->
+           <div class="overlay-content">
+             <a href="#home"  onclick="javascript:closeNav()">Home</a>
+             <a href="#about"  onclick="javascript:closeNav()">About Me</a>
+             <a href="#skills"  onclick="javascript:closeNav()">Skills</a>
+             <a href="#portfolio"  onclick="javascript:closeNav()">Portfolio</a>
+             <a href="#experience"  onclick="javascript:closeNav()">Experiences</a>
+             <a href="#testimonials"  onclick="javascript:closeNav()">Testimonials</a>
+             <a href="#contact" onclick="javascript:closeNav()">Contact Me</a>
+             <a href="https://drive.google.com/file/d/1pQQVlxwz4TkRjeQip2NI9QJNS4p1zSHe/view?usp=share_link" onclick="javascript:closeNav()" target="_blank">Resume</a>
+           </div>
+        </div>
+        <!-- element to open/show the overlay navigation menu -->
+        <span onclick="openNav()"><i class="fa fa-bars"></i></span>
+      </div>
+    <div class="content">
+
+      <!-- landing section -->
+      <section class="welcome-wrapper" id="home">
+        <!-- welcome text -->
+        <div class="welcome-text">
+          <p id="hello">HELLO, IT'S ME</p>
+          <hr>
+          <h1 id="myName">BASIL AHMED QURESHI</h1>
+          <hr>
+          <p> STUDENT | DEVELOPER | ML & AI ENTHUSIAST </p>
+          <a class="welcome-button" href="#about">Read more</a>
+          <a class="welcome-button" href="#portfolio">My works</a>
+        </div>
+      </section>
+      <!-- end of landing section -->
+
+      <!-- about me section -->
+      <section class="about-me-wrapper" id="about">
+        <div class="about-me-container" style="padding-bottom: 0px;">
+          <div class="row">
+            <div class="column4">
+
+            </div>
+            <!-- picture left -->
+            <div class="image">
+              <img id="pic" src="images/myPhotos/myFace.jpg" alt="my face">
+            </div>
+            <!-- intro right -->
+            <div class="intro-text">
+    					<h2 class="intro-name">Basil Ahmed Qureshi</h2>
+    					<hr class="heading-line">
+    					<p class="intro-summary">Sophomore at New York University in Abu Dhabi</p>
+    					<p class="intro-description">I am an individual interested in the fields of Computer Science and Interactive Media. Having had a taste of each of these disciplines over the past few years, I am now motivated towards exploring intellectual endeavors at the intersection of these fields and making an impact whilst ensuring a continued learning experience for personal and professional growth. I love taking on challenges, learning new things and meeting new people.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-me-container top-gap">
+          <div class="row">
+            <!-- contact info left -->
+            <div class="about-contact">
+    					<h3 class="main-heading">personal info</h3>
+    					<hr class="heading-line-small">
+    					<div class="personal-wrapper">
+    						<span>
+    							<strong>name: </strong>Basil Ahmed Qureshi</span>
+    						<span>
+    							<strong>E-mail: </strong>
+    							<a href="mailto:hasin.shabbir@nyu.edu">basil.ahmed@nyu.edu</a>
+    						</span>
+    						<span>
+    							<strong>phone number: </strong>+(971) 56 546 6203</span>
+    						<span>
+    							<strong>website: </strong>
+    							<a href="#">www.basilahmed.com</a>
+    						</span>
+    					</div>
+            </div>
+            <!-- accordion right -->
+            <div class="intro-text">
+              <button class="accordion">What is my goal?</button>
+              <section class="panel">
+                <p>While I do have some material targets set that I would want to achieve, my true goal is making a positive impact. No matter how big or small that impact is, whatever I do I want to do in a way that will make someone's life better in some aspect. I believe it is this experience that will offer me the opportunities to engage and learn a lot more, eventually growing as a person.</p>
+              </section>
+
+              <button class="accordion">What are my strengths?</button>
+              <section class="panel">
+                <p>Even if perfection is not possible, I think there are some things I am quite proficient at.  After spending countless hours learning, practicing and rectifying mistakes, <strong>computer programming and problem solving ability</strong> are some of the strongest among my skill set. Additionally, I believe I have <strong>good communication skills</strong> and can convey my message in an easy yet effective manner. I have also been told I can be a really <strong>good friend</strong> - maybe you should see for yourself? :)</p>
+              </section>
+
+              <button class="accordion">What keeps me going?</button>
+              <section class="panel">
+                <p>Having read it in Grade 6, William E. Hickson's "If at first you don't succeed, try try try again" pops up in my mind everytime I face a challenging situation. This philosophy, along with my motivation of being able to make a positive impact, inculcates a "never give up" philosophy in my mind. Thus I keep on going, overcoming challenges and learning from them no matter how difficult things may seem.</p>
+              </section>
+
+              <button class="accordion">What are my hobbies?</button>
+              <section class="panel">
+                <p>I am very fond of technology and, due to this love I have for it, spend my free time learning <strong>technical skills</strong>. I am also a sports enthusiast and enjoy playing <strong>football (Real Madrid fan) and cricket</strong>. Absolutely
+                crazy about <strong>Robotics and Artificial Intelligence</strong>. Apart from that, I like to keep myself updated with national and international political climate.</p>
+              </section>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- end of about me section -->
+
+    <!-- skills section -->
+      <div class="skills-wrapper" id="skills">
+        <div class="skills-container">
+          <div class="skills-heading">
+            <h1>Technical Skills</h1>
+            <hr>
+            <div class="skill-label">
+              <p>I'm starting</p>
+              <p>Highly proficient</p>
+            </div>
+          </div>
+
+          <!-- technical skills skill bar -->
+          <div id="codeconSkills">
+
+            <div class="codeconSkillbar">
+              <div class="skill-Cpp techSkill" >
+                <span class="codeconSkillArea">C++<img src="images/icon/cpp.png" alt="Cpp"></span>
+              </div>
+            </div>
+
+            <div class="codeconSkillbar">
+              <div class="skill-Py techSkill" >
+                <span class="codeconSkillArea">Python<img src="images/icon/python.png" alt="python"></span>
+              </div>
+            </div>
+
+            <div class="codeconSkillbar">
+              <div class="skill-HTML techSkill" >
+                <span class="codeconSkillArea">HTML5<img src="images/icon/html5.png" alt="HTML5"></span>
+              </div>
+            </div>
+
+            <div class="codeconSkillbar">
+              <div class="skill-JS techSkill" >
+                <span class="codeconSkillArea">JavaScript<img src="images/icon/javascript.png" alt="JavaScript"></span>
+              </div>
+            </div>
+
+            <div class="codeconSkillbar">
+              <div class="skill-CSS techSkill" >
+                <span class="codeconSkillArea">CSS<img src="images/icon/css3.png" alt="CSS3"></span>
+              </div>
+            </div>
+
+            <div class="codeconSkillbar">
+              <div class="skill-Mailchimp techSkill" >
+                <span class="codeconSkillArea">Sockets.io<img src="images/icon/Socket-io.png" alt="Sockets.io"></span>
+              </div>
+            </div>
+
+            <!-- other skills -->
+            <div class="skills-heading-small">
+              <h1>Other Skills</h1>
+              <hr>
+            </div>
+            <div class="other-skills-container">
+
+              <div class="otherSkill">
+                <img src="images/icon/socialMedia.png" alt="social media">
+                <p>Social Media Marketing</p>
+              </div>
+
+              <div class="otherSkill">
+                <img src="images/communication.svg" alt="communication">
+                <p>Communication</p>
+              </div>
+
+              <div class="otherSkill">
+                <img src="images/icon/problemSolving.png" alt="problem solving">
+                <p>Creative Problem Solving</p>
+              </div>
+
+              <div class="otherSkill">
+                <img src="images/icon/design.png" alt="design">
+                <p>Canva | Photoshop</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- background canvas for skills section -->
+        <canvas class="background"></canvas>
+      </div>
+
+      <!-- portfolio/projects section -->
+      <div class="portfolio-wrapper" id="portfolio">
+        <div class="card-wrapper">
+          <h1>My Projects</h1>
+          <hr>
+          <div class="card-cols">
+            <!-- portfolio item -->
+            <div class="card-col" ontouchstart="this.classList.toggle('hover');">
+              <div class="card-container">
+                <!-- card front side -->
+                <div class="front" style="background-image: url('images/30mff.jpeg')">
+                  <div class="inner">
+                    <p>Mr. Bear Interview</p>
+                    <span>Movie Project</span>
+                  </div>
+                </div>
+                <!-- card back side -->
+                <div class="back">
+                  <div class="inner">
+                    <p>In this Interview, we ask Mr. Bear 5 questions which he writes and answers on a paper. Watch the video as Mr. Bear tells about himself!.</p>
+                    <a href="https://github.com/basil-ahmed/CommunicationsLab/tree/main/30MFFWebpage">Read More</a><br>
+                    <a href="https://basil-ahmed.github.io/CommunicationsLab/30MFFWebpage/" target="_blank">Visit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- portfolio item -->
+            <div class="card-col" ontouchstart="this.classList.toggle('hover');" href="https://github.com/basil-ahmed/CommunicationsLab/tree/main/TheFalcons" target="_blank">
+              <div class="card-container">
+                <!-- card front -->
+                <div class="front" style="background-image: url('images/comicStrip.png')">
+                  <div class="inner">
+                    <p>Falcons Comic</p>
+                    <span>Website</span>
+                  </div>
+                </div>
+                <!-- card back -->
+                <div class="back">
+                  <div class="inner">
+                    <p>Sometimes university/student life is hard - and this comic is a story of NYUAD's very own superheros</p>
+                    <a href="https://github.com/basil-ahmed/CommunicationsLab/tree/main/TheFalcons">Read More</a><br>
+                    <a href="https://basil-ahmed.github.io/CommunicationsLab/TheFalcons/" target="_blank">Visit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- portfolio item -->
+            <div class="card-col" ontouchstart="this.classList.toggle('hover');" href="https://github.com/basil-ahmed/PakistanJourney" target="_blank">
+              <div class="card-container">
+                <!-- card front -->
+                <div class="front" style="background-image: url('images/soundProject.jpeg')">
+                  <div class="inner">
+                    <p>Journey Through Pakistan</p>
+                    <span>Website</span>
+                  </div>
+                </div>
+                <!-- card back -->
+                <div class="back">
+                  <div class="inner">
+                    <p>A journey through sound in Pakistan</p>
+                    <a href="https://github.com/basil-ahmed/PakistanJourney">Read More</a><br>
+                    <a href="https://basil-ahmed.github.io/PakistanJourney/" target="_blank">Visit</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- portfolio item -->
+            <div class="card-col" ontouchstart="this.classList.toggle('hover');">
+              <div class="card-container">
+                <!-- card front -->
+                <div class="front" style="background-image: url('images/movie.png')">
+                  <div class="inner">
+                    <p>NYUAD News</p>
+                    <span>Website</span>
+                  </div>
+                </div>
+                <!-- card back -->
+                <div class="back">
+                  <div class="inner">
+                    <p>Covering Top Quality News @ NYUAD</p>
+                    <a href="https://github.com/basil-ahmed/CommunicationsLab/tree/main/NYUADNews">Read More</a><br>
+                    <a href="https://basil-ahmed.github.io/CommunicationsLab/NYUADNews/" target="_blank">Visit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      		</div>
+
+         </div>
+      </div>
+
+      <!-- work experience section -->
+      <!-- direction-r is for right side items, direction-l is for left side items-->
+      <section class="experiences-wrapper" id="experience">
+        <h1>Work Experiences</h1>
+        <hr>
+        <ul class="timeline">
+          <!-- Item 1 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa" id="experience-item"></span>
+                <span class="flag" id="experience-item">Research Assistant</span>
+                <span class="time-wrapper" id="experience-item"><span class="time">Oct '22 - Present</span></span>
+              </div>
+              <div class="institute" id="experience-item">eBrain Lab New York Uninversity in Abu Dhabi</div>
+              <div class="desc" id="experience-item">Working as a part of the Engineering Department's eBrain Lab in Machine Learning and Artificial Intelligence Models.</div>
+            </div>
+          </li>
+          <!-- Item 2 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa" id="experience-item"></span>
+                <span class="flag" id="experience-item">Research Assistant</span>
+                <span class="time-wrapper" id="experience-item"><span class="time">Sept '22 - Present</span></span>
+              </div>
+              <div class="institute" id="experience-item">Fougnie Lab New York Uninversity in Abu Dhabi</div>
+              <div class="desc" id="experience-item">Solving problems primarily through a mixture of psychophysics and computational modeling. Setting up and installing software on experimental and research computers.
+                Data Collection and Analyzation along with Administrative and record keeping tasks.</div>
+            </div>
+          </li>
+          <!-- Item 3 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa" id="experience-item"></span>
+                <span class="flag" id="experience-item">Lab Assistant</span>
+                <span class="time-wrapper" id="experience-item"><span class="time">Sept '22 - Present</span></span>
+              </div>
+              <div class="institute" id="experience-item">Interactive Media Lab NYUAD</div>
+              <div class="desc" id="experience-item">Organization and maintenance of the lab along with the management of Connect2 resource system. Assisting others with digital fabrication needs (operating the laser cutter, 3D printers, CNC router). Providing student support for projects and assignments and Providing support for IM programming and community activities.</div>
+            </div>
+          </li>
+          <!-- Item 4 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa" id="experience-item"></span>
+                <span class="flag" id="experience-item">Summer Intern</span>
+                <span class="time-wrapper" id="experience-item"><span class="time">Jun '22 - Sept '22</span></span>
+              </div>
+              <div class="institute" id="experience-item">Mindstorm Studios Lahore</div>
+              <div class="desc" id="experience-item">Game Development Intern. Part of all 3 modules namely Game Design, Game Arts, Game Programming.
+                Developed Hyper Casual Games and Animations using Unity and Blender.
+                Learned about the gaming industry and its market's business policies as a whole.</div>
+            </div>
+          </li>
+          <!-- Item 5 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa" id="experience-item"></span>
+                <span class="flag" id="experience-item">Marketing Intern</span>
+                <span class="time-wrapper" id="experience-item"><span class="time">Feb '22 - May '22</span></span>
+              </div>
+              <div class="institute" id="experience-item">Uhhibook Publishing (Bismillah Buddies)</div>
+              <div class="desc" id="experience-item">Maintained all Social Media pages and part of their tech department managing their Website. Developed posters, videos, and articles for events, marketing books, and corporate advertisements.</div>
+            </div>
+          </li>
+          <!-- Item 6 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa" id="experience-item"></span>
+                <span class="flag" id="experience-item">Board of Directors</span>
+                <span class="time-wrapper" id="experience-item"><span class="time">Jan '21 - Jul '21</span></span>
+              </div>
+              <div class="institute" id="experience-item">Nixor Corporate</div>
+              <div class="desc" id="experience-item">Supervised a student-run program comprising 14 entities; for-profit, nonprofit, and 1500+ students. Responsible for Human resources and management work keeping the program organized. Supervised the logistical and financial details with a focus on long-term organizational sustainability. Introduced a new position- Chief Information Officer.
+                Held the record for most hours worked.
+                Planned marketing strategies and tailored marketing materials (posters, videos, etc) of several entities.</div>
+            </div>
+          </li>
+          <!-- Item 7 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa" id="experience-item"></span>
+                <span class="flag" id="experience-item">CFO & Web Developer</span>
+                <span class="time-wrapper" id="experience-item"><span class="time">Feb '20 - Dec '20</span></span>
+              </div>
+              <div class="institute" id="experience-item">Nixor Financial Services </div>
+              <div class="desc" id="experience-item">Led a team of 6 Financial Analysts, prepared tax documents, financial plans, stock portfolios, etc. along with heading several projects.
+                Handled and led Asia's First Student-run Credit Card Service called "SUIT Card", and introduced a pre-paid e-wallet app for students.
+                Cooperated with a team of 21 executives on entrepreneurial competitions, on-campus financial services, credit card management, stocks, mutual funds, etc.
+                Organized Karachi’s biggest entrepreneurial event called Skyline.
+                Developed entity’s website and created the online system for purchasing tickets for all school events.</div>
+            </div>
+          </li>
+          <!-- Item 8 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa" id="experience-item"></span>
+                <span class="flag" id="experience-item">Sr. Teaching Assistant</span>
+                <span class="time-wrapper" id="experience-item"><span class="time">Nov '19 - May '21</span></span>
+              </div>
+              <div class="institute" id="experience-item">Nixor Financial Services </div>
+              <div class="desc" id="experience-item">Appointed as a Senior Computer Science TA for extra-ordinary performance.
+                Conducted a Python 101 Course in Nixor Summer Enrichment Classes for 200+ students.</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- testimonials section -->
+      <section class="testimonials-wrapper" id="testimonials">
+        <h2>Testimonials</h2>
+        <hr>
+        <div class="slideshow-container">
+          <!-- testimonial 1 -->
+          <div class="mySlides">
+            <q>Working with you is really motivating! I think the one who spreads motivation is really rare to find as a group partner and this class gave me the best of them :)</q>
+            <p class="author">- Sri Pranav Srivatsavai</p>
+          </div>
+
+          <!-- testimonial 2 -->
+          <div class="mySlides">
+            <q>Definitely one of the most hardworking of our team. Was able to take on and handle any task and went up and beyond than what was expected of him</q>
+            <p class="author">- Mohid Raza</p>
+          </div>
+
+          <!-- testimonial 3 -->
+          <div class="mySlides">
+            <q>Basil is a very nice guy and great to work with. He always made an effort for us to get our work done on time, but didn't rush us. He wanted all the details to be right, in a good way.</q>
+            <p class="author">- Vladimir Sharkovski</p>
+          </div>
+
+          <!-- testimonial carousel arrow controls -->
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+          </div>
+
+          <!-- testimonial carousel dot controls -->
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+      </section>
+
+
+      <!-- iframe target for contact form submission to stay on the same page after submission -->
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+      onload="if(submitted){window.location='https://www.google.com';}"></iframe>
+      <!-- contact section -->
+      <section class="contact-wrapper" id="contact">
+        <h1>Contact Me</h1>
+        <hr>
+        <div class="form-container">
+          <!-- contact form linked to a google form and Collecting submissions in google spreadsheet-->
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfvLlPum9XZugnJ57RmHKAXEJpClkKsQ3P3e3e29dEjYqFsFA/formResponse" method="POST" target="hidden_iframe">
+    				<div class="contact-form-content">
+                <!-- name field -->
+  	    				<input type="text" name="entry.2005620554" placeholder="Your Name" id="formItem-1" required>
+                <!-- email field -->
+                <input type="text" name="entry.1045781291" placeholder="Enter a Valid Email Address" id="formItem-2" required>
+                <!-- message field -->
+                <textarea name="entry.1065046570" placeholder="Your Message" id="formItem-3" required></textarea>
+                <!-- submit button -->
+                <div class="submitButton">
+        						<button id="submit" type="submit" target="hidden_iframe">Send</button>
+    					  </div>
+    				</div>
+    			</form>
+        </div>
+
+        <!-- contact information -->
+        <div class="contact-row">
+          <!-- phone number -->
+          <a class="contactCol4" href="tel:+971565466203">
+            <i class="fa fa-phone center"></i>
+            <div class="contactInfo">
+              <h2>Call Me</h2>
+              <div><span>(+971) 565 466203</span></div>
+              <div><span>(+92) 333 3793 859</span></div>
+            </div>
+          </a>
+          <!-- email address -->
+          <a class="contactCol4" href="mailto:basil.ahmed@nyu.edu">
+            <i class="fa fa-envelope center"></i>
+            <div class="contactInfo">
+              <h2>Send A Message</h2>
+              <div><span>basil.ahmed@nyu.edu</span></div>
+            </div>
+          </a>
+          <!-- home address -->
+          <a class="contactCol4" href="https://goo.gl/maps/zEyWkcejzLrqAouw9" target="_blank">
+            <i class="fa fa-home center"></i>
+            <div class="contactInfo">
+              <h2>Visit Me</h2>
+              <div><span>New York University Abu Dhabi</span></div>
+              <div><span>Saadiyat Island, UAE</span></div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- footer section -->
+      <section class="footer">
+        <div class="footer-text-top">
+          Follow Me
+          <hr>
+        </div>
+        <!-- social media icons -->
+        <div class="sm-icons">
+          <a href="https://www.facebook.com/BasilAhmed.x" target="_blank" class="fa fa-facebook"></a>
+          <a href="https://github.com/basil-ahmed" target="_blank" class="fa fa-github"></a>
+          <a href="https://www.linkedin.com/in/basilahmed2025/" target="_blank" class="fa fa-linkedin"></a>
+          <a href="https://www.instagram.com/basil._.ahmed/" target="_blank" class="fa fa-instagram"></a>
+          <a href="https://wa.me/qr/262TS4JD2GOHM1" target="_blank" class="fa fa-whatsapp"></a>
+        </div>
+        <!-- footer text -->
+        <div class="footer-text-bottom">
+          <hr>
+          &copy; Basil Ahmed Qureshi 2022
+        </div>
+      </section>
+
+
+    </div>
+  </div>
+
+<!-- script for work experience section -->
+<script src="scripts/experiences.js" charset="utf-8"></script>
+<!-- script for skills bar -->
+<script src="scripts/skillbar.js" charset="utf-8"></script>
+<!-- scripts for particle background -->
+<script src="scripts/particleBackground.js" charset="utf-8"></script>
+<script src="scripts/particles.min.js"></script>
+<!-- script for navbar -->
+<script src="scripts/navBarStyles.js" charset="utf-8"></script>
+<!-- script for accordion in about me section -->
+<script src="scripts/accordion.js" charset="utf-8"></script>
+<!-- script for contact form -->
+<script src="scripts/contactForm.js" charset="utf-8"></script>
+<!-- script for testimonials carousel -->
+<script src="scripts/testimonials.js" charset="utf-8"></script>
+
+</body>
+</html>
